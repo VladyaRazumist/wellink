@@ -6,8 +6,8 @@ public class Position {
     private  int x;
     private  int y;
     public Position(int x,int y){
-        if (x>0 || y>0) {
-            throw new IllegalArgumentException("Position coordinates must be >0");
+        if (x<0 || y<0) {
+            throw new IllegalArgumentException("Position coordinates must be >=0");
         }
         this.x=x;
         this.y=y;
